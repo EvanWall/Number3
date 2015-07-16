@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="1" inline="true" x="-87" y="86">
+  <block type="variables_set" id="1" inline="true" x="-69" y="107">
     <field name="VAR">Turn</field>
     <value name="VALUE">
       <block type="math_number" id="2">
@@ -122,8 +122,12 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="procedures_callnoreturn" id="147">
-                                                <mutation name="subroutineTurn"></mutation>
+                                              <block type="robot_delay" id="193" inline="true">
+                                                <value name="DELAY">
+                                                  <block type="math_number" id="194">
+                                                    <field name="NUM">1375</field>
+                                                  </block>
+                                                </value>
                                                 <next>
                                                   <block type="procedures_callnoreturn" id="32">
                                                     <mutation name="subroutineSpeed"></mutation>
@@ -271,13 +275,13 @@
                     </next>
                   </block>
                 </statement>
+                <next>
+                  <block type="movement_stop" id="91"></block>
+                </next>
               </block>
             </next>
           </block>
         </statement>
-        <next>
-          <block type="movement_stop" id="91"></block>
-        </next>
       </block>
     </next>
   </block>
