@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="1" inline="true" x="-69" y="107">
+  <block type="variables_set" id="1" inline="true" x="-64" y="121">
     <field name="VAR">Turn</field>
     <value name="VALUE">
       <block type="math_number" id="2">
