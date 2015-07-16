@@ -85,8 +85,8 @@
                               <block type="procedures_callnoreturn" id="21">
                                 <mutation name="subroutineSpeed"></mutation>
                                 <next>
-                                  <block type="procedures_callnoreturn" id="140">
-                                    <mutation name="subroutineTurn"></mutation>
+                                  <block type="procedures_callnoreturn" id="190">
+                                    <mutation name="subroutineWait"></mutation>
                                     <next>
                                       <block type="movement_stop" id="23">
                                         <next>
@@ -128,8 +128,8 @@
                                                   <block type="procedures_callnoreturn" id="32">
                                                     <mutation name="subroutineSpeed"></mutation>
                                                     <next>
-                                                      <block type="procedures_callnoreturn" id="148">
-                                                        <mutation name="subroutineTurn"></mutation>
+                                                      <block type="procedures_callnoreturn" id="191">
+                                                        <mutation name="subroutineWait"></mutation>
                                                         <next>
                                                           <block type="movement_stop" id="34">
                                                             <next>
@@ -171,8 +171,8 @@
                                                                       <block type="procedures_callnoreturn" id="43">
                                                                         <mutation name="subroutineSpeed"></mutation>
                                                                         <next>
-                                                                          <block type="procedures_callnoreturn" id="150">
-                                                                            <mutation name="subroutineTurn"></mutation>
+                                                                          <block type="procedures_callnoreturn" id="192">
+                                                                            <mutation name="subroutineWait"></mutation>
                                                                             <next>
                                                                               <block type="movement_stop" id="45">
                                                                                 <next>
@@ -306,7 +306,20 @@
       <block type="robot_delay" id="104" inline="true">
         <value name="DELAY">
           <block type="math_number" id="111">
-            <field name="NUM">1500</field>
+            <field name="NUM">1400</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="175" x="616" y="395">
+    <mutation></mutation>
+    <field name="NAME">subroutineWait</field>
+    <statement name="STACK">
+      <block type="robot_delay" id="176" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="177">
+            <field name="NUM">2000</field>
           </block>
         </value>
       </block>
