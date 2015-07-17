@@ -132,8 +132,12 @@
                                                   <block type="procedures_callnoreturn" id="33">
                                                     <mutation name="subroutineSpeed"></mutation>
                                                     <next>
-                                                      <block type="procedures_callnoreturn" id="34">
-                                                        <mutation name="subroutineWait"></mutation>
+                                                      <block type="robot_delay" id="71" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="72">
+                                                            <field name="NUM">5000</field>
+                                                          </block>
+                                                        </value>
                                                         <next>
                                                           <block type="movement_stop" id="35">
                                                             <next>
@@ -323,7 +327,7 @@
       <block type="robot_delay" id="69" inline="true">
         <value name="DELAY">
           <block type="math_number" id="70">
-            <field name="NUM">4000</field>
+            <field name="NUM">3000</field>
           </block>
         </value>
       </block>
